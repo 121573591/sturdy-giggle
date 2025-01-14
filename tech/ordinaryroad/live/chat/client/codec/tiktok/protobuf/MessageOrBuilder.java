@@ -1,0 +1,20 @@
+package tech.ordinaryroad.live.chat.client.codec.tiktok.protobuf;
+
+import com.google.protobuf.ByteString;
+import com.google.protobuf.MessageOrBuilder;
+
+public interface MessageOrBuilder extends MessageOrBuilder {
+  String getMethod();
+  
+  ByteString getMethodBytes();
+  
+  ByteString getPayload();
+  
+  long getMsgId();
+  
+  int getMsgType();
+  
+  long getOffset();
+  
+  boolean getNeedWrdsStore();
+}

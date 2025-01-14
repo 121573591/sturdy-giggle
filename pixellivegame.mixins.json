@@ -1,0 +1,38 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "cn.pixellive.mc.game.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BlockItemMixin",
+    "BlockSettingsAccessor",
+    "ChorusFruitMixin",
+    "ChunkLightMixin",
+    "ChunkMixin",
+    "ChunkSkyLightMixin",
+    "DimensionTypeMixin",
+    "EntityIsRemovedMixin",
+    "EntityNameDisplayMixin",
+    "ExplosionMixin",
+    "FarmlandBlockMixin",
+    "IronGolemTargetMixin",
+    "MinecraftServerSaveMixin",
+    "NoiseChunkGeneratorMixin",
+    "PlayerDamageMixin",
+    "PreventItemDropMixin",
+    "ServerEntityHandlerMixin",
+    "ServerWorldMixin",
+    "UndeadEntityBurnMixin",
+    "WitherBehaviorMixin"
+  ],
+  "client": [
+    "CreateWorldScreenMixin",
+    "EntityRendererMixin",
+    "LivingEntityRendererMixin",
+    "WorldListWidgetMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "pixellivegame-refmap.json"
+}

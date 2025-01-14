@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "pixellivegame",
+  "version": "1.0.0",
+  "name": "PixelLiveGame",
+  "description": "像素互动核心模组",
+  "authors": [
+    "像素互娱"
+  ],
+  "contact": {
+    "website": "https://mc.pixellive.cn",
+    "repo": "https://github.com/pixellivegame"
+  },
+  "license": "unlicense",
+  "icon": "assets/pixellivegame/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "cn.pixellive.mc.game.client.PixelLiveGameClientMod"
+    ],
+    "main": [
+      "cn.pixellive.mc.game.PixelLiveGameMod"
+    ],
+    "server": [
+      "cn.pixellive.mc.game.server.PixelLiveGameServerMod"
+    ],
+    "dedicated_server": [
+      "cn.pixellive.mc.game.server.PixelLiveGameServerMod"
+    ],
+    "modmenu": [
+      "cn.pixellive.mc.game.client.hook.ModMenu"
+    ]
+  },
+  "mixins": [
+    "pixellivegame.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "fabric": "*",
+    "fabric-language-kotlin": ">=1.10.20+kotlin.1.9.24",
+    "minecraft": "1.21.1"
+  }
+}
